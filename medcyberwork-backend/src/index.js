@@ -15,7 +15,7 @@ const app  = express();
 const PORT = process.env.PORT || 4000;
 
 // ── Middleware ────────────────────────────────────────────────
-app.use(cors({ origin: process.env.FRONTEND_URL || "https://medcyber-works.vercel.app/", "https://medcyber-works-aate29tss-kenyons-projects-4dae9a90.vercel.app" credentials: true }));
+app.use(cors({ origin: process.env.FRONTEND_URL || "https://medcyber-works.vercel.app",credentials: true }));
 app.use(express.json());
 
 // ── Routes ────────────────────────────────────────────────────
